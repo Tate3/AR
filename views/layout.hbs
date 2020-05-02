@@ -14,14 +14,14 @@
           .addEventListener("click", function() {
             console.log('clicked')
             entity ? console.log('exists') : console.log('no')
-            /* if (entity !== null) { // Possibility of no video loaded in DOM
+            if (entity !== null) { // Possibility of no video loaded in DOM
                entity.onplay = function () {
               console.log({entity})
                entity.play()
             };
             else{
               alert("hoo");
-            } */
+            } 
           });
       };
     </script>
