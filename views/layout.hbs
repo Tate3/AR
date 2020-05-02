@@ -8,17 +8,20 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script>
       window.onload = function() {
-        var entity = document.querySelector('.ARvideo');
+        var entity = document.querySelector('#ARvideo');
         document
           .querySelector(".say-hi-button")
           .addEventListener("click", function() {
-            if (entity !== null) { // Possibility of no video loaded in DOM
-              entity.onplay = function () {
-              entity.play()
+            console.log('clicked')
+            entity ? console.log('exists') : console.log('no')
+            /* if (entity !== null) { // Possibility of no video loaded in DOM
+               entity.onplay = function () {
+              console.log({entity})
+               entity.play()
             };
             else{
-              alert("hi");
-            }
+              alert("hoo");
+            } */
           });
       };
     </script>
